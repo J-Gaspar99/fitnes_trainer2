@@ -90,20 +90,34 @@ export default function Hero() {
         <ChevronEdge />
         <div className="hero-zigzag__image-clip">
           <AnimatePresence mode="wait">
-            <motion.img
+            <motion.div
               key={slide.image}
-              src={slide.image}
-              alt={slide.label}
-              className={`hero-zigzag__image${slide.imageVariant === 'brand' ? ' hero-zigzag__image--brand' : ''}`}
-              style={{
-                '--hero-img-pos': slide.imagePosition || 'center center',
-                '--hero-img-pos-mobile': slide.imagePositionMobile || 'center bottom',
-              }}
+              className={`hero-zigzag__slide-media${slide.imageVariant === 'brand' ? ' hero-zigzag__slide-media--brand' : ''}`}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.45 }}
-            />
+            >
+              <img
+                src={slide.image}
+                alt=""
+                className="hero-zigzag__image-bg"
+                aria-hidden="true"
+                style={{
+                  '--hero-img-pos': slide.imagePosition || 'center center',
+                  '--hero-img-pos-mobile': slide.imagePositionMobile || 'center bottom',
+                }}
+              />
+              <img
+                src={slide.image}
+                alt={slide.label}
+                className={`hero-zigzag__image${slide.imageVariant === 'brand' ? ' hero-zigzag__image--brand' : ''}`}
+                style={{
+                  '--hero-img-pos': slide.imagePosition || 'center center',
+                  '--hero-img-pos-mobile': slide.imagePositionMobile || 'center bottom',
+                }}
+              />
+            </motion.div>
           </AnimatePresence>
         </div>
       </div>

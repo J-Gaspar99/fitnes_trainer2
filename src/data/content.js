@@ -106,7 +106,7 @@ export const siteContent = {
     ],
     stats: [
       { value: '500+', label: 'Zadovoljnih klijenata' },
-      { value: '8+', label: 'Godina iskustva' },
+      { value: '13+', label: 'Godina iskustva' },
       { value: '15+', label: 'Sertifikata' },
     ],
   },

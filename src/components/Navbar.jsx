@@ -28,7 +28,19 @@ export default function Navbar() {
     return () => { document.body.style.overflow = '' }
   }, [menuOpen])
 
+  useEffect(() => {
+    if (!menuOpen) return undefined
+
+    const onKeyDown = (e) => {
+      if (e.key === 'Escape') setMenuOpen(false)
+    }
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [menuOpen])
+
   const handleNavClick = () => setMenuOpen(false)
+  const closeMenu = () => setMenuOpen(false)
 
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''} ${menuOpen ? 'navbar--menu-open' : ''}`}>
@@ -77,11 +89,27 @@ export default function Navbar() {
               exit={{ opacity: 0, x: '100%' }}
               transition={{ type: 'tween', duration: 0.3 }}
             >
+              <button
+                type="button"
+                className="mobile-menu__backdrop"
+                onClick={closeMenu}
+                aria-label="Zatvori meni"
+              />
+
               <div className="mobile-menu__bg" aria-hidden="true">
                 <div className="mobile-menu__bg-gradient" />
                 <div className="mobile-menu__bg-glow mobile-menu__bg-glow--purple" />
                 <div className="mobile-menu__bg-glow mobile-menu__bg-glow--gold" />
               </div>
+
+              <button
+                type="button"
+                className="mobile-menu__close"
+                onClick={closeMenu}
+                aria-label="Zatvori meni"
+              >
+                <HiX />
+              </button>
 
               <div className="mobile-menu__content">
                 {navLinks.map((link, i) => (
