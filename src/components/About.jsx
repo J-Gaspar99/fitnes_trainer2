@@ -1,4 +1,5 @@
 import LightShimmerText from './LightShimmerText'
+import SectionDecor from './SectionDecor'
 import { motion } from 'framer-motion'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
@@ -10,6 +11,7 @@ export default function About() {
 
   return (
     <section id="o-meni" className="section about">
+      <SectionDecor variant="about" />
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">Upoznaj me</span>

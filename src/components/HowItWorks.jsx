@@ -1,4 +1,5 @@
 import LightShimmerText from './LightShimmerText'
+import SectionDecor from './SectionDecor'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -8,6 +9,7 @@ export default function HowItWorks() {
 
   return (
     <section id="kako-radi" className="section how-it-works">
+      <SectionDecor variant="steps" />
       <div className="how-it-works__bg" />
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
@@ -36,7 +38,6 @@ function StepCard({ step, index }) {
       ref={ref}
       style={{ transitionDelay: `${index * 0.08}s` }}
     >
-      <span className="step-card__number">{step.number}</span>
       <h3>{step.title}</h3>
       <p>{step.description}</p>
       <a href="#kontakt" className="step-card__cta">Zakaži termin →</a>

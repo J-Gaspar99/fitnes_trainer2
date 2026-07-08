@@ -1,4 +1,5 @@
 import LightShimmerText from './LightShimmerText'
+import SectionDecor from './SectionDecor'
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { HiPlay, HiX, HiPhotograph, HiVideoCamera } from 'react-icons/hi'
@@ -15,6 +16,7 @@ export default function Gallery() {
 
   return (
     <section id="galerija" className="section gallery">
+      <SectionDecor variant="gallery" />
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">Portfolio</span>

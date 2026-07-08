@@ -1,3 +1,4 @@
+import SectionDecor from './SectionDecor'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -7,6 +8,7 @@ export default function CtaBanner() {
 
   return (
     <section className="section cta-banner">
+      <SectionDecor variant="cta" />
       <div className="cta-banner__bg" />
       <div className="container">
         <div className="cta-banner__header scroll-reveal" ref={ref}>

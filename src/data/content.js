@@ -67,25 +67,29 @@ export const siteContent = {
         icon: 'plan',
         title: 'Lično kreiran plan treninga',
         description:
-          'Koristeći tvoje ciljeve, navike i iskustvo, kreiram trening prilagođen tebi — ne univerzalnom šablonu.',
+          'Dobijaš detaljno osmišljen plan treninga prema svom cilju, tempu i nivou iskustva. Svaka nedelja ima jasnu strukturu, logiku napretka i smernice koje ti pomažu da znaš tačno šta radiš i zašto to radiš.',
+        image: '/images/program-plan.png',
       },
       {
         icon: 'video',
         title: 'Video snimci vežbi',
         description:
-          'Svaka vežba ima jasan video prikaz pravilnog izvođenja, kako bi trenirao sigurno i sa punim samopouzdanjem.',
+          'Uz svaku važnu vežbu dobijaš jasan video prikaz pravilnog izvođenja, kako bi trenirao bez nesigurnosti. Tako lakše usvajaš tehniku, izbegavaš greške i održavaš kontinuitet čak i kada treniraš samostalno.',
+        image: '/images/program-video.png',
       },
       {
         icon: 'nutrition',
         title: 'Raznovrsni planovi ishrane',
         description:
-          'Ishrana se prilagođava tvojim potrebama i ukusu — bez monotonih obroka, sa ukusnim i održivim jelima.',
+          'Ishrana je prilagođena tvojim potrebama, navikama i ukusu, bez nepotrebnih restrikcija i monotonije. Fokus je na obrocima koje možeš realno da pratiš dugoročno, a da i dalje uživaš u hrani i vidiš rezultate.',
+        image: '/images/program-nutrition.png',
       },
       {
         icon: 'progress',
         title: 'Praćenje napretka',
         description:
-          'Pratiš promene iz nedelje u nedelju i jasno vidiš rezultate. Dostupna sam za konsultacije i savete.',
+          'Napredak pratiš iz nedelje u nedelju kroz beleške, korekcije i jasne smernice za dalje. Na taj način ne radiš naslepo, već u svakom trenutku znaš gde si trenutno, šta je sledeći korak i kako da izvučeš maksimum iz programa.',
+        image: '/images/program-journal.png',
       },
     ],
   },
@@ -119,19 +123,22 @@ export const siteContent = {
         icon: 'body',
         title: 'Oblikovanje tela',
         description:
-          'Programi fokusirani na zatezanje, čvrstoću i lep oblik tela, prilagođeni tvom nivou i tempu, bez iscrpljivanja i preterivanja.',
+          'Program fokusiran na zatezanje, definiciju i bolju formu tela, prilagođen tvom nivou i ritmu života. Treninzi su osmišljeni tako da oblikuju figuru, poboljšaju tonus i donesu vidljive promene bez preterivanja i iscrpljivanja.',
+        image: '/images/plan-body.png',
       },
       {
         icon: 'muscle',
         title: 'Izgradnja mišića',
         description:
-          'Pametno planirani treninzi koji grade snagu i mišiće bez nepotrebnog opterećenja, uz balans između estetike i funkcionalnosti.',
+          'Pametno strukturirani treninzi za razvoj snage i mišićne mase, uz jasan progres i pravilno dozirano opterećenje. Fokus je na kvalitetnom rastu, boljoj funkcionalnosti i estetici koja dolazi iz doslednog, kontrolisanog rada.',
+        image: '/images/plan-muscle.png',
       },
       {
         icon: 'weight',
         title: 'Dolazak do željene kilaže',
         description:
-          'Planovi treninga i ishrane koji te vode ka željenoj kilaži postepeno, održivo i bez rigoroznih dijeta ili kratkoročnih rešenja.',
+          'Plan treninga i ishrane koji te vodi ka željenoj kilaži postepeno, održivo i bez rigoroznih dijeta. Cilj je da napraviš rezultat koji možeš da zadržiš, uz podršku, jasne smernice i navike koje stvarno funkcionišu u svakodnevici.',
+        image: '/images/plan-weight.png',
       },
     ],
   },
@@ -190,19 +197,19 @@ export const siteContent = {
         title: 'Kontinuitet bez prekida',
         description:
           'Tvoj plan je uvek dostupan. Treniraš kada tebi odgovara, uz moju podršku i jasne smernice za svaki korak.',
-        image: '/images/brand/silhouette.png',
+        image: '/images/value-premium-1.png',
       },
       {
         title: 'Plan koji je uvek sa tobom',
         description:
           'Ne dobijaš samo trening u sali — već kompletan sistem: planove, video vežbe, ishranu i praćenje napretka na jednom mestu.',
-        image: '/images/brand/logo.png',
+        image: '/images/value-premium-2.png',
       },
       {
         title: 'Više vrednosti, personalni pristup',
         description:
           'Kvalitetno vođenje sa pravim trenerom koji poznaje tvoje telo, navike i ciljeve — ne generički šablon za sve.',
-        image: '/images/brand/poster.png',
+        image: '/images/value-premium-1.png',
       },
     ],
   },
@@ -271,24 +278,17 @@ export const siteContent = {
     videos: [
       {
         id: 'v1',
-        title: 'Full Body HIIT — 30 min',
-        thumbnail: '/images/about.png',
-        embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        description: 'Intenzivan trening za celo telo — idealan za kućne uslove.',
+        title: 'Trening sa Marijom — 1',
+        thumbnail: '/images/value-premium-1.png',
+        embedUrl: 'https://www.youtube.com/embed/F-kzY_gGiqw',
+        description: 'Praktičan trening koji pokazuje pravilnu tehniku i strukturu vežbanja.',
       },
       {
         id: 'v2',
-        title: 'Core & Glutes Activation',
-        thumbnail: '/images/gallery-1.png',
-        embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        description: 'Aktivacija core muskulature i zadnjice pre glavnog treninga.',
-      },
-      {
-        id: 'v3',
-        title: 'Stretching & Recovery',
-        thumbnail: '/images/hero.jpg',
-        embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-        description: 'Rastegzanje i oporavak za bolju fleksibilnost i regeneraciju.',
+        title: 'Trening sa Marijom — 2',
+        thumbnail: '/images/value-premium-2.png',
+        embedUrl: 'https://www.youtube.com/embed/Bb0JVgrJZeA',
+        description: 'Fokusiran rad na formi, snazi i kontroli pokreta uz stručno vođenje.',
       },
     ],
   },

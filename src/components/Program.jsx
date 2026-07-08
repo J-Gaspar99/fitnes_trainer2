@@ -1,4 +1,5 @@
 import LightShimmerText from './LightShimmerText'
+import SectionDecor from './SectionDecor'
 import { FaClipboardList, FaVideo, FaAppleAlt, FaChartLine, FaFemale, FaDumbbell, FaWeight } from 'react-icons/fa'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
@@ -22,6 +23,7 @@ export default function Program() {
 
   return (
     <section id="program" className="section program">
+      <SectionDecor variant="program" />
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">{program.label}</span>
@@ -53,8 +55,12 @@ function ProgramCard({ feature, index }) {
       ref={ref}
       style={{ transitionDelay: `${index * 0.1}s` }}
     >
-      <div className="program-card__icon">
-        <Icon />
+      <div className="program-card__media">
+        <img src={feature.image} alt={feature.title} className="program-card__image" loading="lazy" />
+        <div className="program-card__overlay" />
+        <div className="program-card__icon">
+          <Icon />
+        </div>
       </div>
       <h3>{feature.title}</h3>
       <p>{feature.description}</p>
@@ -68,6 +74,7 @@ export function TrainingPlans() {
 
   return (
     <section id="planovi" className="section training-plans">
+      <SectionDecor variant="plans" />
       <div className="training-plans__bg" />
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
@@ -97,8 +104,12 @@ function PlanCard({ plan, index }) {
       ref={ref}
       style={{ transitionDelay: `${index * 0.1}s` }}
     >
-      <div className="plan-card__icon">
-        <Icon />
+      <div className="plan-card__media">
+        <img src={plan.image} alt={plan.title} className="plan-card__image" loading="lazy" />
+        <div className="plan-card__overlay" />
+        <div className="plan-card__icon">
+          <Icon />
+        </div>
       </div>
       <h3>{plan.title}</h3>
       <p>{plan.description}</p>

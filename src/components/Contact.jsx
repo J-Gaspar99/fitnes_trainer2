@@ -1,4 +1,5 @@
 import LightShimmerText from './LightShimmerText'
+import SectionDecor from './SectionDecor'
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HiMail, HiPhone, HiLocationMarker } from 'react-icons/hi'
@@ -23,6 +24,7 @@ export default function Contact() {
 
   return (
     <section id="kontakt" className="section contact">
+      <SectionDecor variant="contact" />
       <div className="contact__bg" />
 
       <div className="container">

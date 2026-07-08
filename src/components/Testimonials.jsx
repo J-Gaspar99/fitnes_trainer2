@@ -1,4 +1,5 @@
 import LightShimmerText from './LightShimmerText'
+import SectionDecor from './SectionDecor'
 import { siteContent } from '../data/content'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
@@ -8,6 +9,7 @@ export default function Testimonials() {
 
   return (
     <section id="utisci" className="section testimonials">
+      <SectionDecor variant="testimonials" />
       <div className="container">
         <div className="section-header scroll-reveal" ref={headerRef}>
           <span className="section-label">{testimonials.label}</span>
